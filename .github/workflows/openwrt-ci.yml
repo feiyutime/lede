@@ -52,6 +52,7 @@ jobs:
 
       - name: Generate configuration file
         run: make defconfig
+        
 
       - name: Make download
         run: |
