@@ -55,12 +55,12 @@ jobs:
 
       - name: Generate configuration file
         run: |
-          cat ./.config*
+          cat ./.config
           make defconfig      
 
       - name: Make download
         run: |
-          cat ./.config*
+          cat ./.config
           make download -j8
           find dl -size -1024c -exec rm -f {} \;
 
